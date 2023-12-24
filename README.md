@@ -1,6 +1,17 @@
 # Overview
 This To-Do App is built using Vue.js and is organized into several components to enhance modularity and maintainability. The main components include:
 
+    src/
+    |-- components/
+    |   |-- summary.vue
+    |   |-- summaryItem.vue
+    |   |-- form.vue
+    |   |-- toDoList.vue
+    |   |-- toDoItem.vue
+    |   |-- doneItem.vue
+    |-- App.vue
+
+
 `App.vue`: The main Vue component that serves as the entry point for the application. It incorporates and manages other components to create the complete To-Do App.
 
 `summary.vue`: This component displays a summary of the to-do items. It imports and uses `summaryItem.vue` to render individual summary items.
