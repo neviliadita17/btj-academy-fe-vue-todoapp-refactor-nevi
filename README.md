@@ -1,7 +1,16 @@
-# Vue 3 + Vite
+# Overview
+This To-Do App is built using Vue.js and is organized into several components to enhance modularity and maintainability. The main components include:
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+App.vue: The main Vue component that serves as the entry point for the application. It incorporates and manages other components to create the complete To-Do App.
 
-## Recommended IDE Setup
+Summary.vue: This component displays a summary of the to-do items. It imports and uses SummaryItem.vue to render individual summary items.
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+SummaryItem.vue: This component represents an individual to-do item within the summary. It is used by Summary.vue to display a concise overview of each task.
+
+Form.vue: This component contains a form for adding new to-do items. It provides an interface for users to input task details and submit them to be added to the to-do list.
+
+ToDoList.vue: The main container for displaying the list of to-do items. It incorporates both ToDoItem.vue and DoneItem.vue components to display active and completed tasks.
+
+ToDoItem.vue: This component represents an active to-do item. It is used by ToDoList.vue to display tasks that are yet to be completed.
+
+DoneItem.vue: This component represents a completed to-do item. It is used by ToDoList.vue to display tasks that have been marked as done.
